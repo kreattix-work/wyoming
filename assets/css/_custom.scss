@@ -1,0 +1,151 @@
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+	font-weight: 500;
+}
+.nav-segment {
+	background-color: $gray-200;
+	display: inline-flex;
+	padding: $spacer * 0.4;
+	border-radius: $border-radius;
+
+	@include media-breakpoint-down(sm) {
+		display: flex;
+		> * {
+			flex: 1;
+		}
+	}
+}
+
+.required-mark {
+	&:after {
+		content: '*';
+		display: inline-block;
+		color: $red;
+		margin-left: 4px;
+	}
+}
+.table {
+	.editable-row {
+		background-color: rgba($primary, 0.2);
+	}
+}
+.dataTables_wrapper {
+	width: 100%;
+	.dataTables_length {
+		text-align: center;
+	}
+	.dataTables_filter {
+		width: 100%;
+		label,
+		input {
+			width: 100% !important;
+			margin: 0 !important;
+		}
+	}
+	.col-item > * {
+		padding-top: $spacer !important;
+	}
+	.table-responsive {
+		.table {
+			width: 100% !important;
+			border-radius: $border-radius;
+			margin: 0 !important;
+			overflow: hidden;
+			border: 1px solid $border-color;
+			thead tr {
+				background-color: $primary;
+				color: $white;
+				td,
+				th {
+					text-align: center;
+				}
+			}
+			thead,
+			tbody {
+				tr {
+					th:first-of-type,
+					td:first-of-type {
+						border-left-width: 0;
+					}
+					th:last-of-type,
+					td:last-of-type {
+						border-right-width: 0;
+					}
+					&:first-of-type {
+						th,
+						td {
+							border-top-width: 0;
+						}
+					}
+					&:last-of-type {
+						th,
+						td {
+							border-bottom-width: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.badge {
+	color: #181818 !important;
+}
+
+.files input {
+	padding: 120px 0px 85px 41%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	width: 100% !important;
+}
+.files {
+	position: relative;
+}
+
+.files:before {
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	pointer-events: none;
+	right: 0;
+	content: 'Drag and Drop Files Here';
+	color: #474747;
+	font-weight: 600;
+	text-align: center;
+}
+
+table.dataTable.table-striped > tbody > tr.selected > * {
+	box-shadow: inset 0 0 0 9999px rgba($primary, 0.2) !important;
+	color: inherit;
+}
+
+@include media-breakpoint-down(md) {
+	.content-box {
+		flex-direction: column;
+		.content-box-sider {
+			width: auto;
+		}
+	}
+	.files input {
+		padding: 120px 0px 85px 20%;
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.files input {
+		padding: 120px 0px 85px 30%;
+	}
+}

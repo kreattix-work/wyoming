@@ -1,0 +1,58 @@
+.content-box {
+	border-radius: $border-radius;
+	border: 1px solid $border-color;
+	display: flex;
+
+	&.has-decoration {
+		border-left: 4px solid $primary;
+	}
+
+	&-sider {
+		font-size: 0.9rem;
+		width: 230px;
+		border-radius: $border-radius;
+		background-color: $primary;
+		padding: $spacer $spacer * 0.5;
+		color: $white;
+		font-weight: 600;
+		.nav-pills {
+			gap: $spacer;
+		}
+
+		a {
+			font-weight: 400;
+			color: $white;
+		}
+	}
+
+	.content-box-container {
+		padding: $spacer;
+		flex: 1;
+	}
+
+	.content-box-breadcrumb {
+		border-bottom: 1px solid $border-color;
+		font-weight: 500;
+		.breadcrumb-item {
+			a {
+				text-decoration: none;
+			}
+			&:before {
+				font-size: 0.9rem;
+				font-family: bootstrap-icons !important;
+				--bs-breadcrumb-divider: '\f285';
+			}
+		}
+		& + .content-box-body {
+			padding-top: $spacer;
+		}
+	}
+
+	.content-box-body {
+		line-height: 1.7;
+		a {
+			font-size: 1.025rem;
+			text-decoration: none;
+		}
+	}
+}

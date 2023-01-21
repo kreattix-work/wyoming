@@ -1,0 +1,27 @@
+.widget-card {
+	border-top: 6px solid $primary;
+	width: 100%;
+
+	.card-body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: clamp($spacer * 0.5, 10vw, $spacer);
+		font-size: 0.9rem;
+	}
+	.card-title {
+		margin-bottom: 0;
+		font-weight: 600;
+	}
+}
+
+@each $name, $color in $theme-colors {
+	.widget-card-#{$name} {
+		border-top-color: $color;
+	}
+}
+@each $name, $color in $colors {
+	.widget-card-#{$name} {
+		border-top-color: $color;
+	}
+}

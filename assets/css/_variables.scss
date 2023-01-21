@@ -1,0 +1,31 @@
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+
+$sidebar-width: 280px;
+$sidebar-mini-width: 80px;
+$sidebar-bg: $gray-700;
+$sidebar-padding-y: $spacer;
+$sidebar-padding-x: $spacer * 0.5;
+
+$header-padding-y: $spacer * 0;
+$header-padding-x: 0;
+$header-bg: rgba($white, 0.8);
+$header-height: 76px;
+
+$header-content-padding-y: 0;
+$header-content-padding-x: $spacer;
+
+$navbar-brand-padding-y: 0;
+
+$navbar-toggler-padding-y: $spacer * 0.5;
+$navbar-toggler-padding-x: 0;
+$navbar-toggler-focus-width: 0;
+$navbar-light-toggler-border-color: transparent;
+$navbar-dark-toggler-border-color: transparent;
+
+$nav-pills-link-active-bg: $primary;
+
+$alert-bg-scale: 0%;
+$alert-border-scale: 0%;
+$alert-color-scale: 100%;
+$alert-font-weight: 500;

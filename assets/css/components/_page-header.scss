@@ -1,0 +1,14 @@
+.page-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: $spacer;
+	margin-bottom: $spacer;
+
+	h5 {
+		font-weight: 600;
+	}
+	> * {
+		margin-bottom: 0;
+	}
+}
