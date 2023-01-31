@@ -175,49 +175,65 @@
                 <div class="content-box-container">
                   <form action="">
                     <div class="table-responsive">
-                      <table class="table table-bordered mt-3 align-middle">
-                        <tr>
-                          <th class="">October 1 Total Enrollment</th>
-                          <td class="w-50">123</td>
-                          <td><small></small></td>
-                        </tr>
-                        <tr>
-                          <th class="w-25">Gifted/Talented Count</th>
-                          <td>123</td>
-                          <td>
-                            <small>To be included on the GT Report.</small>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th class="w-25">LEP/ELL Count</th>
-                          <td>123</td>
-                          <td><small>For the LEP/Immigrant survey.</small></td>
-                        </tr>
-                        <tr>
-                          <th class="w-25">Immigrant Count</th>
-                          <td>123</td>
-                          <td><small>For the LEP/Immigrant survey.</small></td>
-                        </tr>
-                        <tr>
-                          <th class="w-25">Bilingual Count</th>
-                          <td>123</td>
-                          <td><small></small></td>
-                        </tr>
-                        <tr>
-                          <th class="w-25">Free/Reduced Count</th>
-                          <td>123</td>
-                          <td><small></small></td>
-                        </tr>
-                        <tr>
-                          <th class="w-25">IEP Count</th>
-                          <td>123</td>
-                          <td><small></small></td>
-                        </tr>
-                        <tr>
-                          <th class="w-25">Migrant Count</th>
-                          <td>123</td>
-                          <td><small></small></td>
-                        </tr>
+                      <table
+                        data-datatables
+                        class="table table-bordered mt-3 align-middle"
+                      >
+                        <thead>
+                          <tr>
+                            <th class="w-25">Certification</th>
+                            <th>District Count</th>
+                            <th>Notes</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="">October 1 Total Enrollment</th>
+                            <td class="w-50">123</td>
+                            <td><small></small></td>
+                          </tr>
+                          <tr>
+                            <th class="w-25">Gifted/Talented Count</th>
+                            <td>123</td>
+                            <td>
+                              <small>To be included on the GT Report.</small>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="w-25">LEP/ELL Count</th>
+                            <td>123</td>
+                            <td>
+                              <small>For the LEP/Immigrant survey.</small>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="w-25">Immigrant Count</th>
+                            <td>123</td>
+                            <td>
+                              <small>For the LEP/Immigrant survey.</small>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="w-25">Bilingual Count</th>
+                            <td>123</td>
+                            <td><small></small></td>
+                          </tr>
+                          <tr>
+                            <th class="w-25">Free/Reduced Count</th>
+                            <td>123</td>
+                            <td><small></small></td>
+                          </tr>
+                          <tr>
+                            <th class="w-25">IEP Count</th>
+                            <td>123</td>
+                            <td><small></small></td>
+                          </tr>
+                          <tr>
+                            <th class="w-25">Migrant Count</th>
+                            <td>123</td>
+                            <td><small></small></td>
+                          </tr>
+                        </tbody>
                       </table>
                     </div>
                     <p>
@@ -249,7 +265,7 @@
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Confirm Sit</h5>
@@ -267,7 +283,7 @@
                   Close
                 </button>
                 <button type="button" class="btn btn-primary">
-                  Yes - Confirm the Sit
+                  Confirm Data for Ankle Elementary School
                 </button>
               </div>
             </div>
@@ -283,3 +299,15 @@
 <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
 <script src="../assets/js/script.js"></script>
+<script>
+  $(function () {
+    $("[data-datatables]").DataTable({
+      responsive: true,
+      language: {
+        search: "_INPUT_",
+        searchPlaceholder: "Search...",
+      },
+      dom: '<"table-responsive"rt>',
+    });
+  });
+</script>
