@@ -60,13 +60,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="#" class="nav-link active">
                 <img class="nav-icon" src="../assets/images/home.svg" alt="" />
                 <span>Import Records</span>
               </a>
             </li>
             <li class="nav-item">
-              <a href="review-changed-data.html" class="nav-link active">
+              <a href="review-changed-data.html" class="nav-link">
                 <img class="nav-icon" src="../assets/images/home.svg" alt="" />
                 <span>Review Changed Data</span>
               </a>
@@ -145,17 +145,14 @@
               <div class="content-box-breadcrumb">
                 <nav>
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
+                    <li class="breadcrumb-item active">
                       <a href="#">Select Site</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                      <a href="#">Confirm Site</a>
                     </li>
                   </ol>
                 </nav>
               </div>
               <div class="content-box-body">
-                <h5 class="h5">Confirm Ankle Elementary School</h5>
+                <h5 class="h5">Confirm/Release Sites</h5>
                 <p class="mb-0">
                   After verifying all of the information for a site is correct,
                   confirm each site in your schools list. Once a site is marked
@@ -166,113 +163,143 @@
                   report will update the data from what was in the Wave as of
                   the last update time
                 </p>
-
-                <p class="mt-2">
-                  Here are the totals you are Confirming for the site Ankle
-                  Elementary School.
-                </p>
-
-                <div class="content-box-container">
-                  <form action="">
-                    <div class="table-responsive">
-                      <table class="table table-bordered mt-3 align-middle">
-                        <tr>
-                          <th class="">October 1 Total Enrollment</th>
-                          <td class="w-50">123</td>
-                          <td><small></small></td>
-                        </tr>
-                        <tr>
-                          <th class="w-25">Gifted/Talented Count</th>
-                          <td>123</td>
-                          <td>
-                            <small>To be included on the GT Report.</small>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th class="w-25">LEP/ELL Count</th>
-                          <td>123</td>
-                          <td><small>For the LEP/Immigrant survey.</small></td>
-                        </tr>
-                        <tr>
-                          <th class="w-25">Immigrant Count</th>
-                          <td>123</td>
-                          <td><small>For the LEP/Immigrant survey.</small></td>
-                        </tr>
-                        <tr>
-                          <th class="w-25">Bilingual Count</th>
-                          <td>123</td>
-                          <td><small></small></td>
-                        </tr>
-                        <tr>
-                          <th class="w-25">Free/Reduced Count</th>
-                          <td>123</td>
-                          <td><small></small></td>
-                        </tr>
-                        <tr>
-                          <th class="w-25">IEP Count</th>
-                          <td>123</td>
-                          <td><small></small></td>
-                        </tr>
-                        <tr>
-                          <th class="w-25">Migrant Count</th>
-                          <td>123</td>
-                          <td><small></small></td>
-                        </tr>
-                      </table>
-                    </div>
-                    <p>
-                      This information is used to fill in multiple State and
-                      Federal Reports. Please be certain these counts are
-                      accurate.
-                    </p>
-                    <div class="d-flex gap-3">
-                      <button class="btn btn-danger">CANCEL</button>
-                      <button
-                        type="button"
-                        class="btn btn-primary w-100"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
-                      >
-                        Confirm the Data for Ankle Elementary School
-                      </button>
-                    </div>
-                  </form>
-                </div>
+                <table
+                  class="table table-striped table-bordered align-middle text-center"
+                  data-datatables
+                >
+                  <thead>
+                    <tr>
+                      <td>School Name</td>
+                      <td>School Code</td>
+                      <td>Status</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Ankle Elementary</td>
+                      <td>5451021</td>
+                      <td>
+                        <span>Open <i class="bi bi-unlock-fill"></i></span>
+                      </td>
+                      <td><a href="#">View Errors & Warnings</a></td>
+                      <td><a href="#">Download Records</a></td>
+                    </tr>
+                    <tr>
+                      <td>Bag Elementar</td>
+                      <td>5451024</td>
+                      <td>
+                        <span>Confirmed <i class="bi bi-lock-fill"></i></span>
+                      </td>
+                      <td><a href="#">View Errors & Warnings</a></td>
+                      <td><a href="#">Download Records</a></td>
+                    </tr>
+                    <tr>
+                      <td>Bagel Elementar</td>
+                      <td>5451023</td>
+                      <td>
+                        <span class="badge text-bg-success px-3">Open</span>
+                      </td>
+                      <td><a href="#">View Errors & Warnings</a></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Balloons Elementar</td>
+                      <td>5451022</td>
+                      <td>
+                        <span class="badge text-bg-success px-3">Open</span>
+                      </td>
+                      <td><a href="#">View Errors & Warnings</a></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Barn Elementar</td>
+                      <td>5451025</td>
+                      <td>
+                        <span class="badge text-bg-success px-3">Open</span>
+                      </td>
+                      <td><a href="#">View Errors & Warnings</a></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Bat Middle School</td>
+                      <td>5451027</td>
+                      <td>
+                        <span class="badge text-bg-success px-3">Open</span>
+                      </td>
+                      <td><a href="#">View Errors & Warnings</a></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Blanket High Schoo</td>
+                      <td>5451027</td>
+                      <td>
+                        <span class="badge text-bg-success px-3">Open</span>
+                      </td>
+                      <td><a href="#">View Errors & Warnings</a></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Bowl Junior High School</td>
+                      <td>5451027</td>
+                      <td>
+                        <span class="badge text-bg-success px-3">Open</span>
+                      </td>
+                      <td><a href="#">View Errors & Warnings</a></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Bowl Junior High School</td>
+                      <td>5451027</td>
+                      <td>
+                        <span class="badge text-bg-success px-3">Open</span>
+                      </td>
+                      <td><a href="#">View Errors & Warnings</a></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Bowl Junior High School</td>
+                      <td>5451027</td>
+                      <td>
+                        <span class="badge text-bg-success px-3">Open</span>
+                      </td>
+                      <td><a href="#">View Errors & Warnings</a></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Bowl Junior High School</td>
+                      <td>5451027</td>
+                      <td>
+                        <span class="badge text-bg-success px-3">Open</span>
+                      </td>
+                      <td><a href="#">View Errors & Warnings</a></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Broom High School</td>
+                      <td>5451027</td>
+                      <td>
+                        <span class="badge text-bg-success px-3">Open</span>
+                      </td>
+                      <td><a href="#">View Errors & Warnings</a></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Bucket Elementar</td>
+                      <td>5451027</td>
+                      <td>
+                        <span class="badge text-bg-success px-3">Open</span>
+                      </td>
+                      <td><a href="#">View Errors & Warnings</a></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
         </section>
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Confirm Sit</h5>
-              </div>
-              <div class="modal-body">
-                Are you sure you would like Confirm the site Ankle Elementary
-                School?
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-bs-dismiss="modal"
-                >
-                  Close
-                </button>
-                <button type="button" class="btn btn-primary">
-                  Yes - Confirm the Sit
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </body>
@@ -283,3 +310,20 @@
 <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
 <script src="../assets/js/script.js"></script>
+
+<script>
+  $(function () {
+    $("[data-datatables]").DataTable({
+      responsive: true,
+      language: {
+        search: "_INPUT_",
+        searchPlaceholder: "Search...",
+      },
+      dom: '<"row my-3"<"col-6"><"col-6"f>><"table-responsive"rt><"row align-items-center"<"col col-item"i><"col col-item"l><"col-item col-xs-12 col-md"p>>',
+    });
+    const add_request_button = $("#add_request_button");
+    add_request_button.remove();
+    $(".add-new-request-button-wrapper").append(add_request_button);
+    RemoveSmallClass();
+  });
+</script>
