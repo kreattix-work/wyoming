@@ -137,7 +137,7 @@
 
         <section class="layout-content">
           <div class="page-header">
-            <h5 class="h5">Find Missing Records</h5>
+            <h5 class="h5">Manage Deleted Records</h5>
           </div>
 
           <div class="content-box has-decoration">
@@ -146,27 +146,35 @@
                 <nav>
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item active">
-                      <a href="">Select Collection</a>
+                      <a href="#">Select Collection</a>
                     </li>
+                    <li class="breadcrumb-item active">Search by ID</li>
                   </ol>
                 </nav>
               </div>
               <div class="content-box-body">
-                <h5 class="h5">Select Collection</h5>
-                <p>
-                  Use this area to view a list of students who might be missing
-                  from the October 1 Consolidated Report.
+                <h5 class="h5">Search by ID</h5>
+                <p class="mb-0">
+                  Use this screen if you would like to mark a record as deleted
+                  or undeleted. Select the field you are using to search.
+                  Separate the list with commas.
                 </p>
-                <div>
-                  <a href="#">
-                    Find Missing Records for <strong>Student</strong></a
-                  >
-                </div>
-                <div>
-                  <a href="#">
-                    Find Missing Records for <strong>SPED Student</strong></a
-                  >
-                </div>
+                <form action="">
+                  <select>
+                    <option>Search by STN</option>
+                  </select>
+                  <div class="mb-3 mt-3">
+                    <textarea
+                      class="form-control"
+                      rows="5"
+                      placeholder="Enter the list of ID(s) separated by a comma."
+                    ></textarea>
+                  </div>
+                  <div class="d-flex justify-content-end gap-3">
+                    <button class="btn btn-secondary px-5">Cancel</button>
+                    <button class="btn btn-primary px-5">Continue</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
