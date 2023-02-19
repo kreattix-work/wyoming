@@ -130,7 +130,7 @@
 
         <section class="layout-content">
           <div class="page-header">
-            <h5 class="h5">State Validation Reports</h5>
+            <h5 class="h5">District Validation Reports</h5>
           </div>
 
           <div class="content-box has-decoration">
@@ -144,40 +144,71 @@
                     <li class="breadcrumb-item active">
                       <a href="#">Student</a>
                     </li>
-                    <li class="breadcrumb-item active">
-                      <a href="">Validation Reports List</a>
-                    </li>
-                    <li class="breadcrumb-item active">Records Awaiting Validation</li>
+                    <li class="breadcrumb-item active">Validation Reports List</li>
                   </ol>
                 </nav>
               </div>
 
               <div class="content-box-body">
-                <h5 class="h5">Records Awaiting Validation for <strong>Student</strong></h5>
+                <h5 class="h5">View Errors and Warnings for Student Data</h5>
                 <p class="mb-0">
-                  Below you will see the list of records that are awaiting validation.
+                  Below are the results of data validation that has occurred on the data you have
+                  reviewed. To quickly navigate to the record click Fix Data for Record. This will
+                  open the record in a new tab or window. To see how to resolve the record click
+                  View Resolution. Records still awaiting validation are not shown in the list.
+                  Click View Records Awaiting Validation to see the list of records not yet
+                  validated.
                 </p>
-                <button id="add_request_button" class="btn btn-primary">Back to Error List</button>
+                <button
+                  id="add_request_button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-1"
+                >
+                  View Records Awaiting Validation
+                </button>
                 <table
                   class="table table-striped table-bordered align-middle text-center"
                   data-datatables
                 >
                   <thead>
                     <tr>
-                      <td>Status</td>
-                      <td>School Name</td>
+                      <td></td>
+                      <td></td>
+                      <td>District Code</td>
                       <td>School Code</td>
                       <td>STN</td>
-                      <td>Date / Time Submitted</td>
+                      <td>Actual Value</td>
+                      <td>Type</td>
+                      <td>Error</td>
+                      <td>Error Description</td>
+                      <td>Error Group</td>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Awaiting Validation</td>
-                      <td>Bucket Elementary</td>
-                      <td>55I123010</td>
-                      <td>951842</td>
-                      <td>12-23-2022 08:52</td>
+                      <td><a href="#">Fix Data for Record</a></td>
+                      <td><a href="#">View Resolution</a></td>
+                      <td>9693441</td>
+                      <td>9693441</td>
+                      <td>5451021</td>
+                      <td>[Yes];</td>
+                      <td>Error</td>
+                      <td>123456</td>
+                      <td>This is the space for the error description.</td>
+                      <td>Student</td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">Fix Data for Record</a></td>
+                      <td><a href="#">View Resolution</a></td>
+                      <td>9693441</td>
+                      <td>9693441</td>
+                      <td>5451021</td>
+                      <td>[No];</td>
+                      <td>Error</td>
+                      <td>123456</td>
+                      <td>This is the space for the error description.</td>
+                      <td>Student</td>
                     </tr>
                   </tbody>
                 </table>
@@ -185,6 +216,23 @@
             </div>
           </div>
         </section>
+
+        <div class="modal fade" id="modal-1">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">View Resolution</h5>
+              </div>
+              <div class="modal-body">
+                Here is the resolution for this error. This will show how to fix the error in the
+                future.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Done</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

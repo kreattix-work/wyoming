@@ -130,7 +130,7 @@
 
         <section class="layout-content">
           <div class="page-header">
-            <h5 class="h5">State Validation Reports</h5>
+            <h5 class="h5">District Validation Reports</h5>
           </div>
 
           <div class="content-box has-decoration">
@@ -138,49 +138,25 @@
               <div class="content-box-breadcrumb">
                 <nav>
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item active">
-                      <a href="#">Select Collection</a>
+                    <li class="breadcrumb-item">
+                      <a href="">Select Collection</a>
                     </li>
-                    <li class="breadcrumb-item active">
-                      <a href="#">Student</a>
-                    </li>
-                    <li class="breadcrumb-item active">
-                      <a href="">Validation Reports List</a>
-                    </li>
-                    <li class="breadcrumb-item active">Records Awaiting Validation</li>
                   </ol>
                 </nav>
               </div>
-
               <div class="content-box-body">
-                <h5 class="h5">Records Awaiting Validation for <strong>Student</strong></h5>
-                <p class="mb-0">
-                  Below you will see the list of records that are awaiting validation.
+                <h5 class="h5">Select a Collection to View Validation Reports</h5>
+                <p>
+                  Select a collection below. On the following screen you will see the validation
+                  errors and warning related to the selected collection. This covers all validations
+                  from file uploads, manual data edits, and reviewing automated data.
                 </p>
-                <button id="add_request_button" class="btn btn-primary">Back to Error List</button>
-                <table
-                  class="table table-striped table-bordered align-middle text-center"
-                  data-datatables
-                >
-                  <thead>
-                    <tr>
-                      <td>Status</td>
-                      <td>School Name</td>
-                      <td>School Code</td>
-                      <td>STN</td>
-                      <td>Date / Time Submitted</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Awaiting Validation</td>
-                      <td>Bucket Elementary</td>
-                      <td>55I123010</td>
-                      <td>951842</td>
-                      <td>12-23-2022 08:52</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div>
+                  <a href="#">View <strong>Student</strong> validation errors and warnings.</a>
+                </div>
+                <div>
+                  <a href="#">View <strong>SPED Status</strong> validation errors and warnings.</a>
+                </div>
               </div>
             </div>
           </div>
@@ -195,20 +171,3 @@
 <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
 <script src="/assets/js/script.js"></script>
-
-<script>
-  $(function () {
-    $("[data-datatables]").DataTable({
-      responsive: true,
-      language: {
-        search: "_INPUT_",
-        searchPlaceholder: "Search...",
-      },
-      dom: '<"row my-3"<"col add-new-request-button-wrapper"><"col-4"f>><"table-responsive"rt><"row align-items-center"<"col col-item"i><"col col-item"l><"col-item col-xs-12 col-md"p>>',
-    });
-    const add_request_button = $("#add_request_button");
-    add_request_button.remove();
-    $(".add-new-request-button-wrapper").append(add_request_button);
-    RemoveSmallClass();
-  });
-</script>
