@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+
+  <body>
+    <div class="layout main-layout">
+      <header class="layout-header navbar">
+        <div class="header-main-content">
+          <button class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img class="img-fluid" src="/assets/images/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="header-secondary-content">
+          <div class="layout-header-title">WINDS Certify</div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link profile-nav-link" href="#">
+                <span>Mark</span>
+                <img src="/assets/images/profile.png" />
+              </a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="layout layout-has-sidebar">
+        <aside class="layout-sidebar">
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">
+                <img class="nav-icon" src="/assets/images/home.svg" alt="" />
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="resume-automatic-updates.html" class="nav-link">
+                <img class="nav-icon" src="/assets/images/home.svg" alt="" />
+                <span>Resume Automative Updates</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link active">
+                <img class="nav-icon" src="/assets/images/home.svg" alt="" />
+                <span>Import Records</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="review-changed-data.html" class="nav-link">
+                <img class="nav-icon" src="/assets/images/home.svg" alt="" />
+                <span>Review Changed Data</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <img class="nav-icon" src="/assets/images/home.svg" alt="" />
+                <span>Manual Data Editing</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <img class="nav-icon" src="/assets/images/home.svg" alt="" />
+                <span>Manage Deleted Records</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <img class="nav-icon" src="/assets/images/home.svg" alt="" />
+                <span>Download Records</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <img class="nav-icon" src="/assets/images/home.svg" alt="" />
+                <span>File Uploader</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#validation_sub_menu" class="nav-link" data-bs-toggle="collapse">
+                <img class="nav-icon" src="/assets/images/home.svg" alt="" />
+                <span>Validation Reports</span>
+                <i class="bi bi-chevron-right"></i>
+              </a>
+              <div class="navbar-sub-menu collapse" id="validation_sub_menu">
+                <ul class="nav nav-pills flex-column mt-2">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <span>Manual Data Reports</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <span>File Upload Reports</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <img class="nav-icon" src="/assets/images/home.svg" alt="" />
+                <span>Data Reports</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <img class="nav-icon" src="/assets/images/home.svg" alt="" />
+                <span>Complete Certification</span>
+              </a>
+            </li>
+          </ul>
+        </aside>
+
+        <section class="layout-content">
+          <div class="page-header">
+            <h5 class="h5">Download Records</h5>
+          </div>
+
+          <div class="content-box has-decoration">
+            <div class="content-box-container">
+              <div class="content-box-breadcrumb">
+                <nav>
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item active">
+                      <a href="#">Select Collection</a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                      <a href="#">Student: Customize Download</a>
+                    </li>
+                    <li class="breadcrumb-item active">Search by ID(s)</li>
+                  </ol>
+                </nav>
+              </div>
+              <div class="content-box-body">
+                <h5 class="h5">Select Download Options - Search by ID</h5>
+                <p class="mb-0">
+                  Search for a set of records to download by a set of ID(s). Select the field you
+                  are using to search. Separate the list with commas.
+                </p>
+                <form action="">
+                  <select class="form-select">
+                    <option>Search by STN</option>
+                  </select>
+                  <div class="mb-3 mt-3">
+                    <textarea
+                      class="form-control"
+                      rows="5"
+                      placeholder="Enter the ID(s) separated by commas."
+                    ></textarea>
+                  </div>
+                  <div class="d-flex justify-content-end gap-3">
+                    <button class="btn btn-secondary">Cancel</button>
+                    <button class="btn btn-primary">Continue</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+<script src="/assets/js/script.js"></script>
