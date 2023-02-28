@@ -12881,7 +12881,7 @@ fieldset:disabled .btn {
 
 .layout-has-sidebar {
   flex-direction: row;
-  padding-top: 76px;
+  padding-top: 150px;
   padding-left: 80px;
 }
 
@@ -12912,7 +12912,7 @@ fieldset:disabled .btn {
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.05);
   position: fixed;
   left: 0;
-  top: 76px;
+  top: 150px;
   z-index: 10;
   bottom: 0;
   color: #fff;
@@ -13147,7 +13147,8 @@ fieldset:disabled .btn {
 }
 
 @media (max-width: 767.98px) {
-  .layout-header-title {
+  .layout-header-title,
+  .header-extra-content {
     display: none;
   }
 
@@ -13569,4 +13570,17 @@ table.dataTable.table-striped > tbody > tr.selected > * {
 .input-menu-group-item > .input-menu-group:not(:first-child):before {
   height: 45px;
   top: -30px;
+}
+
+header.layout-subheader {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  margin-top: 76px;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #eaeaea;
 }
